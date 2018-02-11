@@ -10,9 +10,12 @@ const showOnScroll = () => {
     }
     sections.forEach(section => {
         const offsetTop = section.offsetTop;
-        const distanceFromTop = window.innerHeight + document.body.scrollTop;
+        const scrollTop = window.pageYOffset
+                          || document.documentElement.scrollTop
+                          || document.body.scrollTop;
+        const distanceFromTop = window.innerHeight + scrollTop
         if (distanceFromTop > offsetTop + 150) {
-            section.classList.add('opaque');    
+            section.classList.add('opaque');
         }
     });
 }
