@@ -1,0 +1,119 @@
+.header
+  color: #fff
+  height: 100vh
+  overflow: hidden
+  padding: 150px 0 0
+  position: relative
+  text-align: center
+  text-transform: uppercase
+  @media #{$max-lg}
+    height: calc(100vw / 1.8)
+  @media #{$max-md}
+    padding: 60px 0 0
+  @media #{$max-sm}
+    min-height: 500px
+    padding: 20px 0 0
+  .slideshow
+    height: 100%
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1
+    li
+      background-image: url(https://image.ibb.co/kBo3Aw/Layer_8.png)
+      color: transparent
+      background-size: cover
+      background-position: right center
+      background-repeat: no-repeat
+      left: 0
+      height: 100%
+      opacity: 0
+      position: absolute
+      top: 0
+      width: 100%
+      animation: image-animation ($animation-delay * 3) linear infinite
+    .first-slide
+      background-image: url(https://image.ibb.co/kBo3Aw/Layer_8.png)
+    .second-slide
+      background-image: url(https://static.pexels.com/photos/716661/pexels-photo-716661.jpeg)
+      animation-delay: $animation-delay
+    .third-slide
+      background-image: url(https://static.pexels.com/photos/401107/pexels-photo-401107.jpeg)
+      animation-delay: $animation-delay * 2
+  .logo
+    position: relative
+    z-index: 2
+  h1
+    font-size: 3.375em
+    letter-spacing: 5px
+    margin: 90px 0 40px
+    position: relative
+    z-index: 2
+    @media #{$max-md}
+      margin: 40px 0
+    @media #{$max-xs}
+      font-size: 2.3075em
+  p
+    display: block
+    font-size: 0.9375em
+    margin: 0 auto
+    max-width: 50%
+    position: relative
+    z-index: 2
+    @media #{$max-md}
+      max-width: none
+  .scroll
+    animation: scroll-background 2s
+    animation-iteration-count: infinite
+    background: rgba(255, 255, 255, 0.15)
+    border: 2px solid #fff
+    border-radius: 12px
+    position: absolute
+    bottom: 10px
+    cursor: default
+    height: 37px
+    left: 0
+    margin: auto
+    right: 0
+    width: 23px
+    z-index: 2
+    &:before
+      animation: scroll-point 1s
+      animation-iteration-count: infinite
+      background: #fff
+      border-radius: 50%
+      content: ''
+      height: 4px
+      position: absolute
+      right: 7px
+      top: 7px
+      width: 4px
+
+@keyframes image-animation
+  0%
+    opacity: 0
+    transform: scale(1, 1)
+  7.5%
+    opacity: 1
+  33.3%
+    opacity: 1
+  45%
+    opacity: 0
+    transform: scale(1.2, 1.2)
+  100%
+    opacity: 0
+
+@keyframes scroll-background
+  0%
+    background: rgba(255, 255, 255, 0.15)
+  50%
+    background: rgba(255, 255, 255, 0)
+  100%
+    background: rgba(255, 255, 255, 0.15)
+    
+@keyframes scroll-point
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+    top: 25px

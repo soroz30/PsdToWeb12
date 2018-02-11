@@ -1,11 +1,6 @@
-@import 'partials/variables'
-@import 'partials/mixins'
-@import 'partials/general'
-
-/* ====================================
-   header
-   ==================================*/
-
+/* ==========================
+   Fieldset for sections
+   ========================*/
 
 fieldset
   text-align: center
@@ -22,12 +17,20 @@ fieldset
       width: 60%
   p:last-of-type
     margin: 0
+
+/* ========================
+   About section
+   ======================*/
       
 .about
   padding: 145px 0 160px
   .box-interior
     @include box-padding-resp
     padding: 60px 180px 25px
+
+/* =======================
+   Services section
+   =====================*/
   
 .services
   background-attachment: fixed
@@ -62,6 +65,10 @@ fieldset
   .hidden-background
     opacity: 0
     transition: opacity 1.5s
+
+/* ========================
+   Offer section
+   ======================*/
     
 .offer
   padding: 100px 0 115px
@@ -96,6 +103,10 @@ fieldset
   100%
     transform: rotate(0)
       
+/* =======================
+   Works section
+   =====================*/
+
 .works
   .works__images
     div
@@ -201,6 +212,10 @@ fieldset
     transform: scale(1.5, 1.5)
     translate(30%, 35%)
     
+/* ==========================
+   Contact section
+   ========================*/
+
 .contact
   padding: 135px 0 30px
   .box-interior
@@ -228,28 +243,11 @@ fieldset
       outline-color: #fff
       outline-offset: 15px
       transition: 0.5s
+
+/* ========================
+   Padding for max-md in sections
+  =======================*/
     
 .about, .offer, .contact
   @media #{$max-md}
     padding: 60px 0
-
-footer
-  padding: 30px 0
-  @media #{$max-sm}
-    padding: 0 0 15px
-  p
-    text-align: center
-  p:before
-    background: url(https://image.ibb.co/cGTqqw/Ellipse_1_copy_12.png)
-    content: ""
-    display: inline-block
-    height: 37px
-    position: relative
-    top: 15px
-    right: 35px
-    width: 35px
-    @media #{$max-xs}
-      display: block
-      margin: 0 auto
-      right: 0
-      top: -10px
