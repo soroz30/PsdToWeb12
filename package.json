@@ -1,0 +1,21 @@
+{
+  "name": "psdtoweb12",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "sass": "node-sass -w sass/styles.sass -o styles",
+    "imgOptimize" : "node scripts/imageOptimize.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "imagemin": "^5.3.1",
+    "imagemin-jpegtran": "^5.0.2",
+    "imagemin-pngquant": "^5.0.1",
+    "node-sass": "^4.7.2"
+  }
+}
