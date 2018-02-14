@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
     "sass": "node-sass -w sass/styles.sass -o styles",
-    "imgOptimize" : "node scripts/imageOptimize.js"
+    "imgOptimize": "node scripts/imageOptimize.js",
+    "autoprefix": "postcss styles/styles.css -o styles-prefixed.css --use autoprefixer"
   },
   "author": "",
   "license": "ISC",
