@@ -74,10 +74,10 @@ a {
     .header .slideshow .first-slide {
       background-image: url(../images/Layer%208.png); }
     .header .slideshow .second-slide {
-      background-image: url(../images/Layer%209.png);
+      background-image: url(../images/Layer%209.jpeg);
       animation-delay: 6s; }
     .header .slideshow .third-slide {
-      background-image: url(../images/Layer%210.png);
+      background-image: url(../images/Layer%210.jpeg);
       animation-delay: 12s; }
   .header .logo {
     position: relative;
