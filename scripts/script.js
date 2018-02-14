@@ -1,3 +1,4 @@
+var desktopViewport = window.matchMedia('screen and (min-width: 992px)');
 const sections = document.querySelectorAll('section');
 const scroll = new SmoothScroll('a[href*="#"]', {
                  speed: 1500,
@@ -20,4 +21,10 @@ const showOnScroll = () => {
     });
 }
 
-window.addEventListener('scroll', showOnScroll);
+if (desktopViewport.matches) {
+    window.addEventListener('scroll', showOnScroll);
+} else {
+    sections.forEach(section => {
+        section.classList.add('opaque');
+    });
+}

@@ -448,7 +448,7 @@ footer {
   footer p {
     text-align: center; }
   footer p:before {
-    background: url(../../images/Ellipse%201%20copy%2012.png);
+    background: url(../images/Ellipse%201%20copy%2012.png);
     content: "";
     display: inline-block;
     height: 37px;
