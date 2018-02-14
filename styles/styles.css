@@ -202,7 +202,7 @@ fieldset {
    @mixin ====================*/
 .services {
   background-attachment: fixed;
-  background-image: url(../../images/Layer%204.png);
+  background-image: url(../images/Layer%204.png);
   background-size: cover;
   background-position: right center;
   color: #fff;
