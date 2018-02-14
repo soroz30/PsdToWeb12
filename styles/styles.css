@@ -59,7 +59,7 @@ a {
     width: 100%;
     z-index: 1; }
     .header .slideshow li {
-      background-image: url(../../images/Layer%208.png);
+      background-image: url(../images/Layer%208.png);
       color: transparent;
       background-size: cover;
       background-position: right center;
@@ -72,12 +72,12 @@ a {
       width: 100%;
       animation: image-animation 18s linear infinite; }
     .header .slideshow .first-slide {
-      background-image: url(../../images/Layer%208.png); }
+      background-image: url(../images/Layer%208.png); }
     .header .slideshow .second-slide {
-      background-image: url(../../images/Layer%209.png);
+      background-image: url(../images/Layer%209.png);
       animation-delay: 6s; }
     .header .slideshow .third-slide {
-      background-image: url(../../images/Layer%210.png);
+      background-image: url(../images/Layer%210.png);
       animation-delay: 12s; }
   .header .logo {
     position: relative;
