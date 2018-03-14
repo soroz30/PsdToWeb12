@@ -72,7 +72,7 @@ a {
       width: 100%;
       animation: image-animation 18s linear infinite; }
     .header .slideshow .first-slide {
-      background-image: url(../images/Layer%208.png); }
+      background-image: url(http://res.cloudinary.com/soroz30/image/upload/v1521035727/Layer_8.png); }
     .header .slideshow .second-slide {
       background-image: url(../images/Layer%209.jpeg);
       animation-delay: 6s; }
